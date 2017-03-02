@@ -10,8 +10,10 @@ import UIKit
 
 class EmojiViewController: UIViewController {
     
+    // Connected big emoji
     @IBOutlet weak var emojiLabel: UILabel!
     
+    //Connected emoji definition label
     @IBOutlet weak var emojiDefLabel: UILabel!
     
     var emoji = "NO EMOJI"
@@ -21,8 +23,10 @@ class EmojiViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // Setting passed emoji as big emoji
         emojiLabel.text = emoji
         
+        // Definition based on emoji
         if emoji == "😂" {
             emojiDefLabel.text = "Laughing hard"
         }else if emoji == "😎" {
@@ -35,7 +39,6 @@ class EmojiViewController: UIViewController {
             emojiDefLabel.text = "Chicken"
         }else if emoji == "💃" {
             emojiDefLabel.text = "Dancing"
-
         }
 
 
